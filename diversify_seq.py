@@ -113,7 +113,7 @@ def main(pep_fa=None,
     if pep_fa is None:
         repeat = 'GGG'
         #repeat = 'REPEAT'
-        pep = repeat*20
+        pep = repeat*10
         # Naive list rotation approach (use in predefined order)
         ds_rotate = DiversifiedSeq(pep,codon_fname,len_pep_repeat=len(pep))
         # Greedy algorithm (locally choose codon to minimize self-LCS)
